@@ -10,13 +10,14 @@ const Work = () => {
   return (
     <section className="section" id="work">
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-x-10 h-screen mt-80 ">
-          <motion.div 
-          variants={fadeIn("right", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amounto: 0.3 }}
-          className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0">
+        <div className="flex flex-col mt-96 lg:flex-row  gap-x-10  ">
+          <motion.div
+            variants={fadeIn("right", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amounto: 0.3 }}
+            className="flex-1 flex flex-col gap-y-12 mt-[73px] mb-10 lg:mb-0"
+          >
             <div>
               <h2 className="h2 leading-tight text-accent">
                 Mis ultimos trabajos
@@ -45,13 +46,13 @@ const Work = () => {
             </div>
           </motion.div>
           <motion.div
-          variants={fadeIn("left", 0.3)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amounto: 0.3 }}
-           className="flex-1 flex flex-col gap-y-10">
-            
-          <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+            variants={fadeIn("left", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amounto: 0.3 }}
+            className="flex-1 flex flex-col gap-y-10"
+          >
+            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
               <img
                 className="group-hover:scale-125  transition-all duration-500"
